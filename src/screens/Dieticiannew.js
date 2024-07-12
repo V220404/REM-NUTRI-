@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, SafeAreaView, Image, TouchableOpacity } from 'react-native';
+import { View, Text, SafeAreaView, Image, TouchableOpacity , Picker } from 'react-native';
 import { moderateScale, moderateScaleVertical } from './src/styles/responsiveSize';
 
 const App = () => {
