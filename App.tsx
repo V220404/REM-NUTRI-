@@ -5,7 +5,7 @@ const App = () => {
   return (
     <SafeAreaView>
     <View style={{justifyContent:'center' , alignContent:'center' , marginLeft:'30%' , marginTop:'70%'}}>
-      <Text>hello Ralph I am button  </Text>
+      <Text> hekko</Text>
     </View>
     </SafeAreaView>
   )
