@@ -35,7 +35,7 @@ const App = () => {
               <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '500', fontSize: moderateScale(13), lineHeight: moderateScaleVertical(16.24) }}>12:00 - 12:40</Text>
               <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '500', fontSize: moderateScale(13), lineHeight: moderateScaleVertical(16.24) }}>Today</Text>
             </View>
-            <View style={{ rotation: -90, borderWidth: 1, borderColor: '#BEBEBE', height: moderateScaleVertical(51.65), left: moderateScale(20) }}></View>
+            <View style={{ rotation: -90, borderWidth: 1, borderColor: '#BEBEBE', height: moderateScaleVertical(51.65) }}></View>
             <View style={{ flexDirection: 'column', width: moderateScale(189), height: moderateScaleVertical(40), gap: moderateScaleVertical(4) }}>
               <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '600', fontSize: moderateScale(14), lineHeight: moderateScaleVertical(18.24), letterSpacing: moderateScale(0.1) }}>Dr. Arjun Yasdh </Text>
               <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '600', fontSize: moderateScale(10), lineHeight: moderateScaleVertical(18.24), letterSpacing: moderateScale(0.1) }}>Lorem Ipsum dolor sit lorema</Text>
