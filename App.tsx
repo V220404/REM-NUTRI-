@@ -1,103 +1,94 @@
-import { View, Text, SafeAreaView, Image } from 'react-native'
+import { View, Text, SafeAreaView , Image, TouchableOpacity} from 'react-native'
 import React from 'react'
-import DropDownPicker from 'react-native-dropdown-picker'
 import { moderateScale, moderateScaleVertical } from './src/styles/responsiveSize';
-import { TouchableOpacity } from 'react-native';
 
 const App = () => {
-
-const items = [
-{label:"Dr. Raghu Nanda" , value:"Dr. Raghu Nan"}
-
-]
-
-
   return (
     <SafeAreaView>
-
 <View>
 
+<View style={{flexDirection:'row' , gap:moderateScale(40)}}>
 
-<View style={{ flexDirection: 'row', top: moderateScaleVertical(12), justifyContent: 'space-between', paddingTop: moderateScaleVertical(8), paddingRight: moderateScale(16), paddingBottom: moderateScaleVertical(8), paddingLeft: moderateScale(16) }}>
-          <View style={{ gap: moderateScale(8), flexDirection: 'row', width: moderateScale(92), height: moderateScaleVertical(30) }}>
-            <Image source={{ uri: '/Users/varunsankhe/Desktop/DemoProject/assests/Ellipse 7.png' }} style={{ width: moderateScale(30), height: moderateScaleVertical(30) }} />
-            <Text style={{ fontWeight: '400', fontSize: moderateScale(16), lineHeight: moderateScaleVertical(21), color: '#000000' }}>
-              Hi Sam!
-            </Text>
-          </View>
-          <View>
-            <TouchableOpacity>
-              <Image source={{ uri: '/Users/varunsankhe/Desktop/DemoProject/assests/fi-ss-menu-dots-vertical.png' }} style={{ width: moderateScale(16), height: moderateScaleVertical(20.01), gap: moderateScale(3), right: moderateScale(7) }} />
-            </TouchableOpacity>
-          </View>
-        </View>
+  <TouchableOpacity>
+    
+      <Image source={{uri:'/Users/varunsankhe/Desktop/DemoProject/assests/fi-ss-arrow-left.png'}} style={{width:moderateScale(30), height:moderateScaleVertical(30) , left:20}}/>
+    </TouchableOpacity>
 
-
-
-
-
-<View style={{ width: moderateScale(344), height: moderateScaleVertical(133), top: moderateScaleVertical(36), left: moderateScale(8), backgroundColor: '#FFF7ED', borderRadius: moderateScale(6), alignSelf: 'center' }}>
-          <View style={{ width: moderateScale(169), height: moderateScaleVertical(18), left: moderateScale(24), top: moderateScaleVertical(12) }}>
-            <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '600', fontSize: moderateScale(14), lineHeight: moderateScaleVertical(18.24), color: '#000000' }}>Upcoming Appointment</Text>
-          </View>
-          <View style={{ flexDirection: 'row', top: moderateScaleVertical(40), left: moderateScale(20), gap: moderateScale(20) }}>
-            <View style={{ flexDirection: 'column', width: moderateScale(86.81), height: moderateScaleVertical(33.93), gap: moderateScaleVertical(5) }}>
-              <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '500', fontSize: moderateScale(13), lineHeight: moderateScaleVertical(16.24) }}>12:00 - 12:40</Text>
-              <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '500', fontSize: moderateScale(13), lineHeight: moderateScaleVertical(16.24) }}>Today</Text>
-            </View>
-            <View style={{ rotation: -90, borderWidth: 1, borderColor: '#BEBEBE', height: moderateScaleVertical(51.65) }}></View>
-            <View style={{ flexDirection: 'column', width: moderateScale(189), height: moderateScaleVertical(40), gap: moderateScaleVertical(4) }}>
-              <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '600', fontSize: moderateScale(14), lineHeight: moderateScaleVertical(18.24), letterSpacing: moderateScale(0.1) }}>Dr. Arjun Yasdh </Text>
-              <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '600', fontSize: moderateScale(10), lineHeight: moderateScaleVertical(18.24), letterSpacing: moderateScale(0.1) }}>Lorem Ipsum dolor sit lorema</Text>
-            </View>
-          </View>
-          <View style={{}}>
-            <Image source={{ uri: '/Users/varunsankhe/Desktop/DemoProject/assests/desk calendar.png' }} style={{ width: moderateScale(100), height: moderateScaleVertical(61), left: moderateScale(214) , opacity:40 }} />
-          </View>
-          <View style={{ backgroundColor: '#FCB44B', width: moderateScale(348), height: moderateScaleVertical(33), borderBottomLeftRadius: moderateScale(6), borderBottomRightRadius: moderateScale(6)  }}>
-            <Text style={{ fontSize: moderateScale(12), alignContent: 'center', justifyContent: 'center', alignSelf: 'center', top: moderateScaleVertical(7) }}>https:/loipsuraweklnmeetingumakji.googlemeet.com</Text>
-          </View>
-        </View>
-
+<Text style={{fontFamily:'Roboto' , fontWeight:500 , fontSize:16 , lineHeight:20 , top:5 }}>
+Book Appointment 
+</Text>
+</View>
 
 {/* View Change  */}
 
 
+<View style={{flexDirection:'column' , top:moderateScaleVertical(54) , left: moderateScale(16) , gap:10}}>
 
-<View style={{ gap: moderateScaleVertical(16), top: moderateScaleVertical(145) }}>
-          <View style={{ flexDirection: 'row' }}>
-            <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '500', fontSize: moderateScale(18), lineHeight: moderateScaleVertical(20.85), left: moderateScale(30) }}>Next Appointment</Text>
-            
-              
-            <TouchableOpacity>
-                <Image source={{ uri: '/Users/varunsankhe/Desktop/DemoProject/assests/fi-ss-angle-small-down.png' }} style={{ width: moderateScale(30.41), height: moderateScaleVertical(30.29), left: moderateScale(200) }} />
-              </TouchableOpacity>
-          </View>
+<View style={{flexDirection:'row' , gap:100 }}>
+<View style={{marginLeft:moderateScale(18)}}>
+  <Text style={{fontWeight:'300' , fontSize:16}}>Program Name </Text>
+</View>
 
-          <View style={{ borderBottomColor: '#CCCCCC', borderBottomWidth: moderateScale(1), width: '100%', marginVertical: 0 }}></View>
-
-          <View style={{ flexDirection: 'row' }}>
-            <Text style={{ fontFamily: 'Hanken Grotesk', fontWeight: '500', fontSize: moderateScale(18), lineHeight: moderateScaleVertical(20.85), left: moderateScale(30) }}>Previous Appointment</Text>
-            <View>
-              <TouchableOpacity>
-                <Image source={{ uri: '/Users/varunsankhe/Desktop/DemoProject/assests/fi-ss-angle-small-down.png' }} style={{ width: moderateScale(30.41), height: moderateScaleVertical(30.29), left: moderateScale(170) }} />
-              </TouchableOpacity>
-            </View>
-          </View>
-
-          <View style={{ borderBottomColor: '#CCCCCC', borderBottomWidth: moderateScale(1), width: '100%', marginVertical: 0 }}></View>
-        </View>
+<View style={{alignSelf:'flex-end'}}>
+  <Text >Health Recovery</Text>
+</View>
+</View>
+<View style={{ borderBottomWidth: 0.4, borderBottomColor: 'black' , marginTop:moderateScaleVertical(12) , width:moderateScale(350) }} />
 
 
 
 
+<View style={{flexDirection:'row' , gap:moderateScale(100) }}>
+<View style={{marginLeft:moderateScale(20)}}>
+  <Text style={{fontWeight:'300' , fontSize:16}}>Price </Text>
+</View>
+
+<View style={{alignSelf:'flex-end' , marginLeft:moderateScale(100)}}>
+  <Text >299$</Text>
+</View>
+</View>
+
+<View style={{ borderBottomWidth: 0.4, borderBottomColor: 'black' , marginTop:moderateScaleVertical(12) , width:moderateScale(350) }} />
 
 
 
- </View>
-      
+<View style={{flexDirection:'row' , gap:moderateScale(110) }}>
+<View style={{marginLeft:moderateScale(20)}}>
+  <Text style={{fontWeight:'300' , fontSize:16}}>GST </Text>
+</View>
+
+<View style={{alignSelf:'flex-end' , marginLeft:moderateScale(100)}}>
+  <Text >10$</Text>
+</View>
+</View>
+<View style={{ borderBottomWidth: 0.4, borderBottomColor: 'black' , marginTop:moderateScaleVertical(12) , width:moderateScale(350) }} />
+
+
+
+
+
+<View style={{flexDirection:'row' , gap:moderateScale(100) }}>
+<View style={{marginLeft:moderateScale(20)}}>
+  <Text style={{fontWeight:'600' , fontSize:20}}>Total </Text>
+</View>
+
+<View style={{alignSelf:'flex-end' , marginLeft:moderateScale(90)}}>
+  <Text >308$</Text>
+</View>
+</View>
+<View style={{ borderBottomWidth: 0.4, borderBottomColor: 'black' , marginTop:moderateScaleVertical(12) , width:moderateScale(350) }} />
+
+
+</View>
+
+{/* View Change */}
+
+
+
+
+</View>
     </SafeAreaView>
-    
+   
   )
 }
 
